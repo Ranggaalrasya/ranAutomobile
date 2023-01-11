@@ -21,3 +21,13 @@ Route::get('/', function () {
 Route::group(["prefix" => "/home"], function () {
     Route::get('/all', [HomeController::class, 'index']);
 });
+
+Route::group(["prefix" => "/register"], function(){
+    Route::get('/index',[RegisterController::class, 'index']);
+    Route::get('/create',[RegisterController::class, 'create']);
+    Route::post('/add',[RegisterController::class, 'store']);
+});
+
+Route::group(["prefix" => "/login"], function(){
+    Route::get('/index',[LoginController::class, 'index']);
+});
