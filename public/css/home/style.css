@@ -1,0 +1,85 @@
+.hero-section {
+    position: relative;
+}
+
+.hero-section img {
+    width: 1400px;
+    height: 508px;
+}
+
+.hero-section h2 {
+    position: absolute;
+    top: 15%;
+    left: 70px;
+    font-size: 35px;
+    font-weight: 700;
+    color: rgb(27, 203, 171);
+}
+
+.hero-section .search-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 70%;
+    left: 60px;
+    padding: 20px;
+    width: 1240px;
+    height: 72px;
+    border-radius: 25px;
+    background-color: white;
+}
+
+.hero-section .search-bar .search-icon {
+    font-size: 25px;
+    color: #1BCBAB;
+}
+
+.search-bar input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    font-weight: 600;
+    color: #1BCBAB;
+    margin-left: 40px;
+}
+
+.search-bar .form-check-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+}
+
+.search-bar input::placeholder {
+    color: #C9C9C9;
+}
+
+.hero-section .search-bar .submit {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 55px;
+    border-radius: 25px;
+    background-color: rgb(27, 203, 171);
+    border: none;
+}
+
+.hero-section .search-bar .submit .arrow  {
+    margin-left: 15px;
+    font-size: 1em;
+    color: white;
+}
+
+.hero-section .search-bar .submit a {
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+}
+
