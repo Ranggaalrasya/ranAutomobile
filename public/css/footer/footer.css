@@ -15,6 +15,7 @@
     display: flex;
     padding-top: 100px;
 }
+
 .info-2 {
     display: flex;
     padding-top: 100px;
@@ -68,6 +69,7 @@
 .call {
     margin-top: 10px;
 }
+
 .form-contact {
     padding-left: 25px;
     width: 262px;
@@ -83,4 +85,18 @@
 
 .company {
     margin-right: 50px;
+}
+
+.footer-bawah {
+    margin-top: 17px;
+    height: 80px;
+    border-top: 1px solid #505865;
+}
+
+.footer-bawah center p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 80px;
+    color: white;
+    align-self: center;
 }
