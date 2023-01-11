@@ -1,0 +1,86 @@
+.container-footer {
+    height: 403px;
+    width: 100%;
+    background-color: black;
+}
+
+.footer-atas {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 130px;
+}
+
+.info {
+    display: flex;
+    padding-top: 100px;
+}
+.info-2 {
+    display: flex;
+    padding-top: 100px;
+}
+
+.info .adress-footer {
+    font-size: 18px;
+    font-weight: 500;
+    width: 290px;
+    color: #fff;
+}
+
+.list-item-footer .link-footer {
+    text-decoration: none;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 2.5em;
+}
+
+.list-item-footer {
+    list-style-type: none;
+}
+
+.contact {
+    width: 325px;
+}
+
+.contact .btn-contact {
+    background: linear-gradient(135deg, #1bcbab 0%, #1bcbab 100%), #000000;
+    border-radius: 0px 4px 4px 0px;
+}
+
+.contact .btn-contact span {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    font-weight: "Montserrat";
+}
+
+.social {
+    display: flex;
+    margin-top: 25px;
+}
+
+.social .logo-social {
+    width: 40px;
+    margin-left: 10px;
+}
+
+.call {
+    margin-top: 10px;
+}
+.form-contact {
+    padding-left: 25px;
+    width: 262px;
+    font-style: italic;
+}
+
+.call p {
+    font-weight: 600;
+    color: #fff;
+    font-size: 24px;
+    text-align: end;
+}
+
+.company {
+    margin-right: 50px;
+}
