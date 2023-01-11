@@ -32,4 +32,10 @@
             </div>
         </div>
     </div>
+    <div class="footer-bawah">
+        <center>
+            <p>Copyright 2022 © RanAutomobile, All Rights Reserved.</p>
+        </center>
+
+    </div>
 </div>
