@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
+    <script src="https://kit.fontawesome.com/5e00427037.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/footer/footer.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +17,7 @@
 <body>
 
     @include('partials.navbar')
-
+    @yield('container')
     <div class="container mt-4">
 
         @yield('container')
