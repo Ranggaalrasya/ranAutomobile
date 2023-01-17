@@ -1,0 +1,63 @@
+.merk .judul {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    background: linear-gradient(135deg, #1bcbab 0%, #1bcbab 100%), #000000;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.merk .desc {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 10px;
+    margin-bottom: 50px;
+    letter-spacing: -0.035em;
+
+    color: #000000;
+}
+
+.merk {
+    text-align: center;
+    background-color: bisque;
+}
+
+.merk-mobil {
+    padding: 0 50px;
+}
+
+.container-merk-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 60px;
+}
+
+.merk-mobil img {
+    transition: 0.5s;
+}
+
+.merk-mobil img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.container-merk-row p {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    letter-spacing: 0.04em;
+
+    color: #000000;
+}
