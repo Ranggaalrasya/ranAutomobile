@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('merk');
+    return view('home');
 });
 
 Route::group(["prefix" => "/home"], function () {
