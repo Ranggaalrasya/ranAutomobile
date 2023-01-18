@@ -1,7 +1,7 @@
 .merk .judul {
     font-family: "Montserrat";
     font-style: normal;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 48px;
     background: linear-gradient(135deg, #1bcbab 0%, #1bcbab 100%), #000000;
     -webkit-background-clip: text;
@@ -24,7 +24,6 @@
 
 .merk {
     text-align: center;
-    background-color: bisque;
 }
 
 .merk-mobil {
@@ -52,7 +51,8 @@
 .container-merk-row p {
     font-family: "Montserrat";
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
+    margin-top: 15px;
     font-size: 18px;
     line-height: 22px;
     /* identical to box height */
