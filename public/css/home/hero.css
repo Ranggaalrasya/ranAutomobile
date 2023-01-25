@@ -43,7 +43,7 @@
     outline: none;
     font-size: 22px;
     font-weight: 600;
-    color: #1bcbab;
+    color: #1BCBAB;
     margin-left: 40px;
 }
 
@@ -57,6 +57,7 @@
 
 .search-bar input::placeholder {
     color: #c9c9c9;
+
 }
 
 .hero-section .search-bar .submit {
@@ -66,6 +67,12 @@
     justify-content: center;
     width: 160px;
     height: 55px;
+    border-radius: 25px;
+    background-color: rgb(27, 203, 171);
+    border: none;
+}
+
+.hero-section .search-bar .submit .arrow  {
     border-radius: 70px;
     background-color: rgb(27, 203, 171);
     border: none;

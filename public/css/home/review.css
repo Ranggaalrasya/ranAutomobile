@@ -1,0 +1,105 @@
+.review-section {
+    width: 1160px;
+    height: 670px;
+    margin: 0 auto;
+    padding: 30px 0 0 0;
+}
+
+.review-section .title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.review-section .title p {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #ACAEB4;
+}
+
+.review-section .title h3 {
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.review-section .review-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.review-section .review-container .review-img {
+    width: 350px;
+    height: 456px;
+    background-color: #F5F5F5;
+    margin-right: 20px;
+    margin-left: -30px;
+}
+
+.review-section .review-container .description {
+    width: 300px;
+    height: 456px;
+    margin-left: 25px;
+}
+
+.review-section .review-container .description p {
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.review-container .description h4 {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.preview .preview-button {
+    width: 56px;
+    height: 56px;
+    color: black;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    box-shadow: 0px 0px 5px 0px #111;
+}
+
+.next .next-button {
+    width: 56px;
+    height: 56px;
+    color: white;
+    background-color: #20BFB6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 0;
+    margin-left: 5.5em;
+    list-style: none;
+}
+
+.carousel-indicators .indicator {
+    display: inline-block;
+    width: 25px;
+    height: 5px;
+    margin-right: 5px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #20BFB6;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
