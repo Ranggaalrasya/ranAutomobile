@@ -31,3 +31,7 @@ Route::group(["prefix" => "/register"], function(){
 Route::group(["prefix" => "/login"], function(){
     Route::get('/index',[LoginController::class, 'index']);
 });
+
+Route::get('/review', function() {
+    return view('review');
+});
