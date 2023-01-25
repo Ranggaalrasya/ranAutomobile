@@ -7,9 +7,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="public\css\home\hero.css">
-        <link rel="stylesheet" href="public\css\home\merk.css">
-        <link rel="stylesheet" href="public\css\home\review.css">
+        <link rel="stylesheet" href="css/home/hero.css">
+        <link rel="stylesheet" href="css/home/merk.css">
+        <link rel="stylesheet" href="css/home/review.css">
         <title>Document</title>
     </head>
 
