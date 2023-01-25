@@ -4,7 +4,7 @@
 
 .hero-section img {
     width: 1400px;
-    height: 508px;
+    height: 400px;
 }
 
 .hero-section h2 {
@@ -27,13 +27,13 @@
     padding: 20px;
     width: 1240px;
     height: 72px;
-    border-radius: 25px;
+    border-radius: 70px;
     background-color: white;
 }
 
 .hero-section .search-bar .search-icon {
     font-size: 25px;
-    color: #1BCBAB;
+    color: #1bcbab;
 }
 
 .search-bar input {
@@ -56,7 +56,8 @@
 }
 
 .search-bar input::placeholder {
-    color: #C9C9C9;
+    color: #c9c9c9;
+
 }
 
 .hero-section .search-bar .submit {
@@ -72,6 +73,11 @@
 }
 
 .hero-section .search-bar .submit .arrow  {
+    border-radius: 70px;
+    background-color: rgb(27, 203, 171);
+    border: none;
+}
+.hero-section .search-bar .submit .arrow {
     margin-left: 15px;
     font-size: 1em;
     color: white;
@@ -82,4 +88,3 @@
     font-size: 17px;
     font-weight: 700;
 }
-
