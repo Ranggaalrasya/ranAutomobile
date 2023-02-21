@@ -177,13 +177,7 @@
                 </div>
             </div>
         </div>
-
-
     </div>
-        <div class="container review-section">
-            <div class="title">
-                <p>Review Pengunjung</p>
-                <h3>Apa yang orang bilang tentang kami</h3>
     <div class="container review-section">
         <div class="title">
             <p>Review Pengunjung</p>
