@@ -9,6 +9,6 @@ use Illuminate\Foundation\Auth\User;
 class LoginController extends Controller
 {
     public function index(){
-        return view('register.index',["data_register" => User::all()]);
+        return view('login.all');
     }
 }

@@ -1,0 +1,118 @@
+*,
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container-bg-login {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/assets/img/bg-login.png");
+}
+
+.login-container-up {
+    padding: 0 20px;
+    width: 420px;
+    height: 415px;
+    background-color: #fff;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.login-container-down {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 420px;
+    height: 219px;
+    background-color: #1bcbab;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.back-session {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+
+.back-session .icon img {
+    width: 32px;
+}
+
+.back-session h3 {
+    font-weight: 500;
+    color: #b7b1b8;
+    font-size: 20px;
+    margin-top: 8px;
+    margin-left: 17px;
+}
+
+.form-control {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #b7b1b8;
+    border-radius: 8px;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #b7b1b8;
+}
+
+.form h3 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.form .btn-login {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border: 2px solid #1bcbab;
+    border-radius: 30px;
+    color: #1bcbab;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-container-down p {
+    font-size: 16px;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.login-third-party {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 75%;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+.login-third-party h3 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 7.5px;
+}
+
+.login-third-party .icon img {
+    width: 20px;
+    height: 20px;
+}
