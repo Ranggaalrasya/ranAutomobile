@@ -15,7 +15,85 @@
     </div>
     <div class="form-check form-switch">
     </div>
-
+    <div class="card-section">
+        <div class="grid-section">
+            <div class="tagline1">Sedan</div>
+            <div class="grid-item">
+                <div class="card-item">
+                    <img class="card-img" src="assets/img/pngegg 1.png" alt="sedan"></img>
+                    <div class="card-content">
+                        <div class="card-header">New Corolla Atlas</div>
+                        <ul>
+                            <li>Dual Zone AC</li>
+                            <li>Jok Kulit</li>
+                            <li>Stereo</li>
+                        </ul>
+                        <button class="card-btn"><a href=""></a>Rp120.000.000</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tagline2">Sedan</div>
+            <div class="grid-item">
+                <div class="card-item">
+                    <img class="card-img" src="assets/img/Calya 1.png" alt="MPV"></img>
+                    <div class="card-content">
+                        <div class="card-header">New Calya 2022</div>
+                        <ul>
+                            <li>Dual SRS Airbag</li>
+                            <li>Jok Kulit</li>
+                            <li>Stereo</li>
+                        </ul>
+                        <button class="card-btn"><a href=""></a>Rp200.000.000</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tagline3">Sedan</div>
+            <div class="grid-item">
+                <div class="card-item">
+                    <img class="card-img" src="assets/img/aplhard.png" alt="sedan"></img>
+                    <div class="card-content">
+                        <div class="card-header">Toyota aplhard</div>
+                        <ul>
+                            <li>Monitor LCD</li>
+                            <li>Power Seat</li>
+                            <li>Sunroof</li>
+                        </ul>
+                        <button class="card-btn"><a href=""></a>Rp1.100.000.000</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tagline4">Sedan</div>
+            <div class="grid-item">
+                <div class="card-item">
+                    <img class="card-img" src="assets/img/zenix.png" alt="sedan"></img>
+                    <div class="card-content">
+                        <div class="card-header">Toyota Zenix</div>
+                        <ul>
+                            <li>Monitor LCD</li>
+                            <li>Power Seat</li>
+                            <li>Sunroof</li>
+                        </ul>
+                        <button class="card-btn"><a href=""></a>Rp500.000.000</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tagline5">Sedan</div>
+            <div class="grid-item">
+                <div class="card-item">
+                    <img class="card-img" src="assets/img/fortuner.png" alt="sedan"></img>
+                    <div class="card-content">
+                        <div class="card-header">Toyota Fortuner</div>
+                        <ul>
+                            <li>Monitor LCD</li>
+                            <li>Power Seat</li>
+                            <li>Sunroof</li>
+                        </ul>
+                        <button class="card-btn"><a href=""></a>Rp614.000.000</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="merk">
         <h2 class="judul">Pilih Merk</h2>
         <p class="desc">Pilih salah satu merek berikut ini untuk mendapat info mobil yang lebih lengkap</p>
@@ -112,10 +190,10 @@
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                     class="active indicator" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"
-                    class="indicator"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"
-                    class="indicator"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2" class="indicator"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3" class="indicator"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
