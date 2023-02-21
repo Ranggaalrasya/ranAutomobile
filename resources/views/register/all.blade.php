@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login Page</title>
-    <link rel="stylesheet" href="{{ asset('css/user/login.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/user/register.css') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -26,9 +26,12 @@
                 <h3>Kembali</h3>
             </div>
             <div class="form">
-                <h3>Masuk Untuk Order Online</h3>
+                <h3>Daftar Untuk Order Online</h3>
                 {{-- make form for login and password --}}
                 <form action="get">
+                    <div class="mb-3">
+                        <input type="name" class="form-control" id="exampleInputEmail1" placeholder="Username">
+                    </div>
                     <div class="mb-3">
                         <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email"
                             aria-describedby="emailHelp">
@@ -37,7 +40,7 @@
                         <input type="password" class="form-control" id="exampleInputPassword1"
                             placeholder="Enter Password">
                     </div>
-                    <button type="submit" class="btn-login">Masuk</button>
+                    <button type="submit" class="btn-login">Daftar</button>
                 </form>
             </div>
         </div>
@@ -47,13 +50,13 @@
                 <div class="icon">
                     <img src="{{ asset('assets/icons/google.png') }}" alt="">
                 </div>
-                <h3>Masuk dengan akun Google</h3>
+                <h3>Daftar dengan akun Google</h3>
             </div>
             <div class="login-third-party">
                 <div class="icon">
                     <img src="{{ asset('assets/icons/facebook.png') }}" alt="">
                 </div>
-                <h3>Masuk dengan akun Facebook</h3>
+                <h3>Daftar dengan akun Facebook</h3>
             </div>
         </div>
 

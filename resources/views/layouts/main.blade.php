@@ -7,6 +7,9 @@
     <title>Bootstrap demo</title>
     <script src="https://kit.fontawesome.com/5e00427037.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/footer/footer.css" />
+    <link rel="stylesheet" href="css/home/hero.css">
+    <link rel="stylesheet" href="css/home/merk.css">
+    <link rel="stylesheet" href="css/home/review.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">

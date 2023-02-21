@@ -8,14 +8,16 @@ use Illuminate\Foundation\Auth\User;
 
 class RegisterController extends Controller
 {
-    public function index(){
-        return view('register.index',["data_register" => User::all()]);
+    public function index()
+    {
+        return view('register.all');
     }
 
     public function create(User $user)
     {
-        return view('register.create', ["user" => User::all()
-    ]);
+        return view('register.create', [
+            "user" => User::all()
+        ]);
     }
 
     public function store(Request $request)
