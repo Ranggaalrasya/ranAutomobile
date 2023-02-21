@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\ProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,7 +34,6 @@ Route::group(["prefix" => "/register"], function(){
 Route::group(["prefix" => "/login"], function(){
     Route::get('/index',[LoginController::class, 'index']);
 });
-
-Route::get('/review', function() {
-    return view('review');
+Route::group(["prefix" => "/profile"], function(){
+    Route::get('/all',[ProfileController::class, 'index']);
 });

@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Section */
+
+.header {
+    margin: 20px 40px;
+    text-align: center;
+}
+
+.navbar-nav {
+    margin-right: 14%;
+}
+
+.nav-item {
+    margin: 0 30px;
+}
+
+.header-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #000;
+    margin: 0 10px;
+}
+
+.header-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* profile user section */
+
+.row {
+    padding: 5% 0;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 8%;
+}
+
+.profile-card .profile-item {
+    margin-left: 30px;
+}
+
+.profile-card .profile-img {
+    width: 100px;
+    margin-left: -50px;
+}
+
+.profile-item .profile-name  {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 4%;
+}
+
+.profile-item .profile-desc {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+
+/* Contact Information */
+
+table {
+    margin: 0 15%;
+    width: 500px;
+    height: 200px;
+}
+
+table .info-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    color: #979797;
+}
+
+td {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+
+/* Benefit Section */
+
+.benefit {
+    margin-top: 10%;
+    margin-bottom: 50px;
+}
+
+.benefit-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.benefit-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.benefit-item {
+    width: 100%;
+    padding: 10px;
+}
+
+.benefit-item img {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.benefit-description {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.carousel {
+    padding: 0 5%;
+}
+
+
+
+.carousel .carousel-control-prev,
+.carousel .carousel-control-next {
+    width: 50px;
+    height: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: #20BFB6;
+    border: none;
+    border-radius: 100%;
+    outline: none;
+    cursor: pointer;
+}
+
+
+/* .carousel .carousel-control-prev i {
+    width: fit-content;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;    
+    margin-right: 100px;
+} */
