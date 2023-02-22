@@ -7,10 +7,11 @@
     <title>Bootstrap demo</title>
     <script src="https://kit.fontawesome.com/5e00427037.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/footer/footer.css" />
-    <link rel="stylesheet" href="css/home/hero.css">
-    <link rel="stylesheet" href="css/home/merk.css">
-    <link rel="stylesheet" href="css/home/review.css">
-    <link rel="stylesheet" href="css/home/card.css">
+    <link rel="stylesheet" href="/css/home/hero.css">
+    <link rel="stylesheet" href="/css/home/merk.css">
+    <link rel="stylesheet" href="/css/home/review.css">
+    <link rel="stylesheet" href="/css/home/card.css">
+    <link rel="stylesheet" href="/css/mobil_baru/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,6 +26,8 @@
     <style>
         * {
             font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
         }
     </style>
 </head>
