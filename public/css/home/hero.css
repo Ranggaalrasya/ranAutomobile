@@ -3,7 +3,7 @@
 }
 
 .hero-section img {
-    width: 95%;
+    width: 98%;
     height: 480px;
 }
 
@@ -22,10 +22,10 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 70%;
+    top: 73%;
     left: 60px;
     padding: 20px;
-    width: 80%;
+    width: 88%;
     height: 72px;
     border-radius: 70px;
     background-color: white;

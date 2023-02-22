@@ -1,0 +1,39 @@
+.step {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.secondary-judul p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #acaeb4;
+}
+
+.header {
+    width: 60%;
+    text-align: center;
+}
+
+.main-judul h1 {
+    font-weight: 500;
+    font-size: 45px;
+}
+
+.step-by-step {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 130%;
+    margin-top: 50px;
+    margin-left: -120px;
+}
+
+.stripes {
+    width: 143px;
+    border: 2px dashed #707070;
+    margin-bottom: 6rem;
+}

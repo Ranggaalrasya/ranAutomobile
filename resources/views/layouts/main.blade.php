@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/css/home/merk.css">
     <link rel="stylesheet" href="/css/home/review.css">
     <link rel="stylesheet" href="/css/home/card.css">
+    <link rel="stylesheet" href="/css/home/step.css">
     <link rel="stylesheet" href="/css/mobil_baru/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
