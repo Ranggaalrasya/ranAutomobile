@@ -7,7 +7,7 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                     <a class="nav-link active" style="font-size:19px; font-family: Montserrat; font-weight: 600;"
-                        aria-current="page" href="#">Mobil Baru</a>
+                        aria-current="page" href="/mobil-baru/all">Mobil Baru</a>
                 </li>
                 <li class="nav-item" style="margin-left:30px;">
                     <a class="nav-link active" style="font-size:19px; font-family: Montserrat; font-weight: 600;"

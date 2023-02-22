@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\MobilBaruController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\ProfileController;
 
@@ -36,4 +37,7 @@ Route::group(["prefix" => "/login"], function(){
 });
 Route::group(["prefix" => "/profile"], function(){
     Route::get('/all',[ProfileController::class, 'index']);
+});
+Route::group(["prefix" => "/mobil-baru"], function(){
+    Route::get('/all',[MobilBaruController::class, 'index']);
 });
