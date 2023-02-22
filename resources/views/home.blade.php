@@ -94,6 +94,45 @@
             </div>
         </div>
     </div>
+    <div class="step">
+        <div class="header">
+            <div class="secondary-judul">
+                <p>BAGAIMANA KITA BEKERJA ?</p>
+            </div>
+            <div class="main-judul">
+                <h1>Beli mobil impian anda dengan praktis dan tanpa langkah yang banyak.</h1>
+            </div>
+            <div class="step-by-step">
+                <div class="steps">
+                    <img src="{{ asset('assets/img/step-1.png') }}" alt="">
+                    <div class="step-desc">
+                        <p>Tentukan dan pilih lokasi anda agar mudah mem-pickup mobil impian anda.</p>
+                    </div>
+                </div>
+                <div class="stripes"></div>
+                <div class="steps">
+                    <img src="{{ asset('assets/img/step-2.png') }}" alt="">
+                    <div class="step-desc">
+                        <p>Tentukan dan pilih lokasi anda agar mudah mem-pickup mobil impian anda.</p>
+                    </div>
+                </div>
+                <div class="stripes"></div>
+                <div class="steps">
+                    <img src="{{ asset('assets/img/step-3.png') }}" alt="">
+                    <div class="step-desc">
+                        <p>Isi informasi dan syarat syarat kami ,dan contact admin kami untuk berdiskkusi lebih lanjut</p>
+                    </div>
+                </div>
+                <div class="stripes"></div>
+                <div class="steps">
+                    <img src="{{ asset('assets/img/step-4.png') }}" style="padding: 1.5rem;" alt="">
+                    <div class="step-desc">
+                        <p>Isi informasi dan syarat syarat kami ,dan contact admin kami untuk berdiskkusi lebih lanjut</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="merk">
         <h2 class="judul">Pilih Merk</h2>
         <p class="desc">Pilih salah satu merek berikut ini untuk mendapat info mobil yang lebih lengkap</p>
@@ -197,11 +236,13 @@
                     <div class="review-container">
                         <img src="{{ asset('assets/img/home_review_img1.png') }}" alt="" class="review-img">
                         <div class="description">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique laboriosam laborum at
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique laboriosam
+                                laborum at
                                 sed
                                 nesciunt, consequuntur quos inventore quisquam! Eum assumenda esse eveniet corporis
                                 iusto, magnam
-                                accusamus rem labore sunt fugiat. Lorem ipsum dolor sit amet uidem consequuntur officiis
+                                accusamus rem labore sunt fugiat. Lorem ipsum dolor sit amet uidem consequuntur
+                                officiis
                                 animi,
                                 atque corporis incidunt laborum. Dolores, quisquam?</p>
                             <h4>USER 1</h4>
@@ -219,11 +260,13 @@
                     <div class="review-container">
                         <img src="{{ asset('assets/img/home_review_img1.png') }}" alt="" class="review-img">
                         <div class="description">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique laboriosam laborum at
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique laboriosam
+                                laborum at
                                 sed
                                 nesciunt, consequuntur quos inventore quisquam! Eum assumenda esse eveniet corporis
                                 iusto, magnam
-                                accusamus rem labore sunt fugiat. Lorem ipsum dolor sit amet uidem consequuntur officiis
+                                accusamus rem labore sunt fugiat. Lorem ipsum dolor sit amet uidem consequuntur
+                                officiis
                                 animi,
                                 atque corporis incidunt laborum. Dolores, quisquam?</p>
                             <h4>USER 2</h4>
@@ -241,11 +284,13 @@
                     <div class="review-container">
                         <img src="{{ asset('assets/img/home_review_img1.png') }}" alt="" class="review-img">
                         <div class="description">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique laboriosam laborum at
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique laboriosam
+                                laborum at
                                 sed
                                 nesciunt, consequuntur quos inventore quisquam! Eum assumenda esse eveniet corporis
                                 iusto, magnam
-                                accusamus rem labore sunt fugiat. Lorem ipsum dolor sit amet uidem consequuntur officiis
+                                accusamus rem labore sunt fugiat. Lorem ipsum dolor sit amet uidem consequuntur
+                                officiis
                                 animi,
                                 atque corporis incidunt laborum. Dolores, quisquam?</p>
                             <h4>USER 3</h4>
