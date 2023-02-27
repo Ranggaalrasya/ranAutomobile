@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('mobil_barus', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
+            $table->string('merk');
             $table->integer('harga');
             $table->string('tipe');
             $table->string('transmisi');
@@ -23,6 +24,10 @@ return new class extends Migration
             $table->string('mesin');
             $table->string('kapasitas');
             $table->string('warna');
+            $table->string('gambar_depan');
+            $table->string('gambar_kiri');
+            $table->string('gambar_belakang');
+            $table->string('gambar_kanan');
             $table->timestamps();
         });
     }
