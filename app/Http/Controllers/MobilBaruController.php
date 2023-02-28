@@ -14,7 +14,7 @@ class MobilBaruController extends Controller
      */
     public function index()
     {
-        return view('mobil_baru.all', ["data_mobil" => MobilBaru::all()]);
+        return view('mobil_baru.all', ["data_mobil" => MobilBaru::filter(request(['search', 'id']))->paginate()]);
     }
 
     /**

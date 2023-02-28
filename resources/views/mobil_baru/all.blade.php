@@ -4,45 +4,49 @@
         <div class="col-lg-4">
             <div class="Filter">
                 <h5 class="filter-title">Filter Pencarian.</h5>
-                <div class="input-group mb-3 search">
-                    <input type="text" class="form-control" placeholder="Cari..." aria-label="Recipient's username"
-                        aria-describedby="basic-addon2" />
-                    <span class="input-group-text search-icon" id="basic-addon2"><i
-                            class="fa-solid fa-magnifying-glass"></i></span>
-                </div>
-                <div class="dropdown dropdown-filter">
-                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Dropdown button
-                    </button>
-                    <ul class="dropdown-menu w-100">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </div>
-                <div class="dropdown dropdown-filter">
-                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Dropdown button
-                    </button>
-                    <ul class="dropdown-menu w-100">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </div>
-                <div class="dropdown dropdown-filter">
-                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Dropdown button
-                    </button>
-                    <ul class="dropdown-menu w-100">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </div>
+                <form action="/mobil-baru/all" method="GET" class="d-inline">
+                    <div class="input-group mb-3 search">
+                        <input type="text" class="form-control" placeholder="Cari..." aria-label="Recipient's username"
+                            aria-describedby="basic-addon2" name="search" value="{{ request('search') }}" />
+                        <button class="btn search-icon" type="submit" id="button-addon2"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <div class="dropdown dropdown-filter">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Kapasitas
+                        </button>
+                        {{-- <select class="form-select" name="id" id="id">
+                            <option value="">Semua Kelas</option>
+                            @foreach ($data_mobil as $mobil)
+                            @if (request('id') == $mobil->id)
+                                <option name="id" value="{{ $mobil->id }}" selected>{{ $mobil->transmisi }}
+                                </option>
+                            @else
+                                <option name="id" value="{{ $mobil->id }}">{{ $mobil->transmisi }}</option>
+                            @endif
+                        @endforeach
+                        </select> --}}
+                    </div>
+                    <div class="dropdown dropdown-filter">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown button
+                        </button>
+                        <ul class="dropdown-menu w-100">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown dropdown-filter">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown button
+                        </button>
+                        <ul class="dropdown-menu w-100">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </form>
             </div>
         </div>
         <div class="col-lg-8" style="margin-left: -25px
@@ -177,7 +181,7 @@
                         </div>
                         <div class="cars">
                             <div class="row">
-                                @foreach ($data_mobil->reverse() as $mobil)
+                                @foreach ($data_mobil as $mobil)
                                     <div class="col-lg-4" style="margin-bottom: 40px">
                                         <div class="card-car">
                                             <img class="image-car" src="{{ $mobil->gambar_display }}" alt="">
