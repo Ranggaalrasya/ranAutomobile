@@ -24,6 +24,7 @@ return new class extends Migration
             $table->string('mesin');
             $table->string('kapasitas');
             $table->string('warna');
+            $table->string('gambar_display');
             $table->string('gambar_depan');
             $table->string('gambar_kiri');
             $table->string('gambar_belakang');
