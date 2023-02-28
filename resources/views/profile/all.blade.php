@@ -31,11 +31,11 @@
                 <div class="col-lg-6">
                     <div class="container profile-card">
                         @auth
-                            <img class="profile-img" src="https://tsoimageprod.azureedge.net/static-content/prod/360degview/FORTUNER_GR/exterior_360/Fortuner_White/fortuner_super-white-1_optimized.png"
+                            <img class="profile-img" src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
                                 alt="user-profile-image">
                             <div class="profile-item">
                                 <h1 class="profile-name">{{ auth()->user()->name }}</h1>
-                                <p class="profile-desc">Anggota Member RanAutoMobile {{ auth()->user()->created_at }}</p>
+                                <p class="profile-desc">Anggota Member RanAutoMobile {{ auth()->user()->created_at->year }}</p>
                             </div>
                             
                         @endauth
