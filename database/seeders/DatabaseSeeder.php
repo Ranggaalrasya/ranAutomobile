@@ -39,7 +39,7 @@ class DatabaseSeeder extends Seeder
             'merk' => 'Toyota',
             'harga' => '286000000',
             'tipe' => 'VELOZ 1.5 M/T',
-            'transmisi' => 'Otomatis',
+            'transmisi' => 'Manual',
             'bahan_bakar' => 'Bensin',
             'mesin' => '1496 cc',
             'kapasitas' => '7',
