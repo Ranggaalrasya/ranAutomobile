@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="/css/home/step.css">
     <link rel="stylesheet" href="/css/mobil_baru/main.css">
     <link rel="stylesheet" href="/css/detail_page/main.css">
+    <link rel="stylesheet" href="/css/mobil_baru/filter.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,6 +30,9 @@
             font-family: 'Montserrat', sans-serif;
             margin: 0;
             padding: 0;
+        }
+        body{
+            padding-top: 150px;
         }
     </style>
 </head>

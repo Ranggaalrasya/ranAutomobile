@@ -6,33 +6,37 @@
             lebih banyak sehingga<br>
             Anda membayar lebih<br>
             sedikit</h2>
-        <div class="search-bar">
-            <i class="fa-solid fa-magnifying-glass search-icon"></i>
-            <input type="text" placeholder="New ALPHARD 2.5GT A/T Premium">
-            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-            <button type="submit" class="submit"><a>Cari<i class="fa-solid fa-arrow-right arrow"></i></a></button>
-        </div>
+        <form action="mobil-baru/all" method="GET">
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" placeholder="New ALPHARD 2.5GT A/T Premium" name="search" value="{{ request('search') }}">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                <button type="submit" class="submit"><a>Cari<i class="fa-solid fa-arrow-right arrow"></i></a></button>
+            </div>
+        </form>
     </div>
     <div class="form-check form-switch">
     </div>
     <div class="card-section">
         <div class="grid-section">
-            <div class="tagline1">Sedan</div>
-            <div class="grid-item">
-                <div class="card-item">
-                    <img class="card-img" src="assets/img/pngegg 1.png" alt="sedan"></img>
-                    <div class="card-content">
-                        <div class="card-header">New Corolla Atlas</div>
-                        <ul>
-                            <li>Dual Zone AC</li>
-                            <li>Jok Kulit</li>
-                            <li>Stereo</li>
-                        </ul>
-                        <button class="card-btn"><a href=""></a>Rp120.000.000</button>
+            @foreach ($data_mobil as $mobil)
+                <div class="grid-item">
+                    <div class="card-item">
+                        <img class="card-img" src="{{ $mobil->gambar_display }}" width="50px" height="50px"
+                            alt="sedan"></img>
+                        <div class="card-content">
+                            <div class="card-header">{{ $mobil->nama }}</div>
+                            <ul>
+                                <li>Dual Zone AC</li>
+                                <li>Jok Kulit</li>
+                                <li>Stereo</li>
+                            </ul>
+                            <button class="card-btn"><a href=""></a>@currency($mobil->harga)</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="tagline2">Sedan</div>
+            @endforeach
+            {{-- <div class="tagline2">Sedan</div>
             <div class="grid-item">
                 <div class="card-item">
                     <img class="card-img" src="assets/img/Calya 1.png" alt="MPV"></img>
@@ -91,7 +95,7 @@
                         <button class="card-btn"><a href=""></a>Rp614.000.000</button>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
     <div class="step">
@@ -129,6 +133,21 @@
                     <div class="step-desc">
                         <p>Isi informasi dan syarat syarat kami ,dan contact admin kami untuk berdiskkusi lebih lanjut</p>
                     </div>
+                </div>
+            </div>
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+                integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+            <div class="progress-container">
+                <div class="progress-decoration">
+                </div>
+                <div class="progress-bar">
+                    <div class="js-completed-bar completed-bar" data-complete="60">
+
+                    </div>
+                </div>
+                <div class="progress-information">
+                    <p class="text-colour--faded-60">Step 3</p>
+                    <p class="text-colour--primary-red--80">60%</p>
                 </div>
             </div>
         </div>
@@ -315,4 +334,12 @@
             </button>
         </div>
     </div>
+
+    <Script>
+        const progress = document.querySelector(".js-completed-bar");
+        if (progress) {
+            progress.style.width = progress.getAttribute("data-complete") + "%";
+            progress.style.opacity = 1;
+        }
+    </Script>
 @endsection

@@ -119,11 +119,11 @@
 
 .card-img {
     align-items: center;
-    width: 80%;
+    width: 150px;
     margin-top: 15px;
     object-fit: fill;
     justify-content: center;
-    height: 80%;
+    height: 150px;
 }
 
 .card-content {

@@ -28,13 +28,14 @@
             <div class="form">
                 <h3>Masuk Untuk Order Online</h3>
                 {{-- make form for login and password --}}
-                <form action="get">
+                <form method="POST" action="/login/auth">
+                    @csrf
                     <div class="mb-3">
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email"
+                        <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email"
                             aria-describedby="emailHelp">
                     </div>
                     <div class="mb-3">
-                        <input type="password" class="form-control" id="exampleInputPassword1"
+                        <input type="password" name="password" class="form-control" id="exampleInputPassword1"
                             placeholder="Enter Password">
                     </div>
                     <button type="submit" class="btn-login">Masuk</button>

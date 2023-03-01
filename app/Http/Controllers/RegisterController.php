@@ -4,16 +4,17 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use Illuminate\Foundation\Auth\User;
+use App\Models\User;
+use Illuminate\Support\Facades\Hash;
 
 class RegisterController extends Controller
 {
     public function index()
     {
-        return view('register.all');
+        return view('register.all',["data_user" => User::all()]);
     }
 
-    public function create(User $user)
+    public function create()
     {
         return view('register.create', [
             "user" => User::all()
@@ -28,6 +29,9 @@ class RegisterController extends Controller
             'password'  => 'required'
         ]);
 
+        $validateData['password'] = Hash::make($validateData['password']);
+
         User::create($validateData);
+        return redirect('/login/index')->with('success', 'Berhasil login');
     }
 }

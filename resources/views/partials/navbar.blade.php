@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg" style="background-color:white;">
+<nav class="navbar navbar-expand-lg fixed-top" style="background-color:white;">
     <div class="container-fluid">
         <a class="navbar-brand" href="/">
             <img src="..\assets\img\black_logo.png" height="83" alt="">
@@ -18,24 +18,49 @@
                         aria-current="page" href="#">Contact</a>
                 </li>
             </ul>
-            <button class="btn"
-                style="background: #FFFFFF;
+            @auth
+                <li class="nav-item dropdown" style="list-style: none;">
+                    <a href="#" class="nav-lin dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                         {{ auth()->user()->name }}
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item dropdown">
+                            <a class="dropdown-item" href="/profile/all"> <i class="bi bi-box-arrow-right"></i>Profile</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <form action="/login/logout" method="post">
+                                @csrf
+                                <button type="submit" class="dropdown-item"><i
+                                        class="bi bi-box-arrow-right"></i>Logout</button>
+                            </form>
+                        </li>
+                    </ul>
+                </li>
+            @else
+                <button class="btn"
+                    style="background: #FFFFFF;
         border: 1px solid #20BFB6;
         border-radius: 4px; margin-right: 20px; height:35px; width:98px;"
-                type="submit">
-                <a href="/login/index" style="text-decoration: none; color: #20BFB6">
-                    <p style="font-size:16px; font-family:Montserrat; font-weight: 600; color: #20BFB6;">Masuk</p>
-                </a>
-            </button>
-            <button class="btn"
-                style="background: #20BFB6;
+                    type="submit">
+                    <a href="/login/index" style="text-decoration: none; color: #20BFB6">
+                        <p style="font-size:16px; font-family:Montserrat; font-weight: 600; color: #20BFB6;">Masuk</p>
+                    </a>
+                </button>
+                <button class="btn"
+                    style="background: #20BFB6;
         border-radius: 4px; margin-right:20px; height:35px; width:98px;"
-                type="submit">
-                <a href="/register/index" style="text-decoration: none; color: #FFF">
-                    <p style="font-size:16px; font-family:Montserrat; font-weight: 600;">Daftar</p>
-                </a>
+                    type="submit">
+                    <a href="/register/index" style="text-decoration: none; color: #FFF">
+                        <p style="font-size:16px; font-family:Montserrat; font-weight: 600;">Daftar</p>
+                    </a>
 
-            </button>
+                </button>
+            @endauth
+
         </div>
     </div>
 </nav>
