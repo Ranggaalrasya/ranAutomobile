@@ -14,7 +14,6 @@ class DetailController extends Controller
      */
     public function index()
     {
-        return view('detail_page.all');
     }
 
     /**

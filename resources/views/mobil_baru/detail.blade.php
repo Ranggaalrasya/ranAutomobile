@@ -2,7 +2,7 @@
 @section('container')
     <div class="container">
         <div class="row">
-            <div class="col-lg-2">
+            <div class="col-lg-3">
                 <div class="container-choice">
                     <div class="container-transmition">
                         <h4>Pilih Transimisi</h4>
@@ -68,8 +68,44 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-8">Tes</div>
-            <div class="col-lg-2">
+            <div class="col-lg-6">
+                <div class="container">
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{{ $mobil->gambar_depan }}" width="400px" height="350px" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{{ $mobil->gambar_kiri }}" width="400px" height="350px" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{{ $mobil->gambar_belakang }}" width="400px" height="350px" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{{ $mobil->gambar_kanan }}" width="400px" height="350px" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"  style="background-color: #20bfb6; border-radius: 50%; padding: 5px;"
+                                aria-hidden="false"></span>
+                        
+
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" style="background-color: #20bfb6; border-radius: 50%; padding: 5px;"
+                                aria-hidden="true"></span>
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
                 <div class="container-pesan">
                     <h4 class="text-center">Pesan Sekarang</h4>
                     <p class="text-center">Dapatkan harga terbaik melalui diskusi bersama kami.</p>
