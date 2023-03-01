@@ -18,7 +18,7 @@
     @include('partials.navbar')
 
     <div class="container-bg-login">
-        <div class="login-container-up">
+        <div class="login-container-up mt-lg-5">
             <div class="back-session">
                 <div class="icon">
                     <img src="{{ asset('assets/icons/back-button.png') }}" alt="">
