@@ -18,9 +18,7 @@ use App\Http\Controllers\ProfileController;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', [HomeController::class, 'index']);
 
 Route::group(["prefix" => "/home"], function () {
     Route::get('/all', [HomeController::class, 'index']);
