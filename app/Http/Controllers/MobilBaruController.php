@@ -2,13 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\home;
-
+use App\Models\Mesin;
 use App\Models\MobilBaru;
 use Illuminate\Http\Request;
-use Illuminate\Routing\Controller;
 
-class HomeController extends Controller
+class MobilBaruController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,7 +15,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home', ["data_mobil" => MobilBaru::paginate(5)]);
+        return view('mobil_baru.all', [
+            "data_mobil" => MobilBaru::filter(request(['search', 'mesin_id']))->paginate(),
+            "data_mesin" => Mesin::all()
+        ]);
     }
 
     /**
@@ -44,10 +45,10 @@ class HomeController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\home  $home
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(home $home)
+    public function show($id)
     {
         //
     }
@@ -55,10 +56,10 @@ class HomeController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\home  $home
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(home $home)
+    public function edit($id)
     {
         //
     }
@@ -67,10 +68,10 @@ class HomeController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\home  $home
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, home $home)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -78,10 +79,10 @@ class HomeController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\home  $home
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(home $home)
+    public function destroy($id)
     {
         //
     }

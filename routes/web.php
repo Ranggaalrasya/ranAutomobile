@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\MobilBaruController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\ProfileController;
 
@@ -17,23 +18,26 @@ use App\Http\Controllers\ProfileController;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', [HomeController::class, 'index']);
 
 Route::group(["prefix" => "/home"], function () {
     Route::get('/all', [HomeController::class, 'index']);
 });
 
-Route::group(["prefix" => "/register"], function(){
-    Route::get('/index',[RegisterController::class, 'index']);
-    Route::get('/create',[RegisterController::class, 'create']);
-    Route::post('/add',[RegisterController::class, 'store']);
+Route::group(["prefix" => "/register"], function () {
+    Route::get('/index', [RegisterController::class, 'index']);
+    Route::get('/create', [RegisterController::class, 'create']);
+    Route::post('/add', [RegisterController::class, 'store']);
 });
 
-Route::group(["prefix" => "/login"], function(){
-    Route::get('/index',[LoginController::class, 'index']);
+Route::group(["prefix" => "/login"], function () {
+    Route::get('/index', [LoginController::class, 'index'])->name('login')->middleware('guest');
+    Route::post('/auth', [LoginController::class, 'auth'])->name('login.auth');
+    Route::post('/logout', [LoginController::class, 'logout']);
 });
-Route::group(["prefix" => "/profile"], function(){
-    Route::get('/all',[ProfileController::class, 'index']);
+Route::group(["prefix" => "/profile"], function () {
+    Route::get('/all', [ProfileController::class, 'index'])->middleware('auth');
+});
+Route::group(["prefix" => "/mobil-baru"], function () {
+    Route::get('/all', [MobilBaruController::class, 'index']);
 });
