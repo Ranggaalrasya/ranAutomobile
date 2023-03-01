@@ -20,7 +20,8 @@
             @foreach ($data_mobil as $mobil)
                 <div class="grid-item">
                     <div class="card-item">
-                        <img class="card-img" src="{{ $mobil->gambar_display }}" width="50px" height="50px" alt="sedan"></img>
+                        <img class="card-img" src="{{ $mobil->gambar_display }}" width="50px" height="50px"
+                            alt="sedan"></img>
                         <div class="card-content">
                             <div class="card-header">{{ $mobil->nama }}</div>
                             <ul>
@@ -130,6 +131,21 @@
                     <div class="step-desc">
                         <p>Isi informasi dan syarat syarat kami ,dan contact admin kami untuk berdiskkusi lebih lanjut</p>
                     </div>
+                </div>
+            </div>
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+                integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+            <div class="progress-container">
+                <div class="progress-decoration">
+                </div>
+                <div class="progress-bar">
+                    <div class="js-completed-bar completed-bar" data-complete="60">
+
+                    </div>
+                </div>
+                <div class="progress-information">
+                    <p class="text-colour--faded-60">Step 3</p>
+                    <p class="text-colour--primary-red--80">60%</p>
                 </div>
             </div>
         </div>
@@ -316,4 +332,12 @@
             </button>
         </div>
     </div>
+
+    <Script>
+        const progress = document.querySelector(".js-completed-bar");
+        if (progress) {
+            progress.style.width = progress.getAttribute("data-complete") + "%";
+            progress.style.opacity = 1;
+        }
+    </Script>
 @endsection
