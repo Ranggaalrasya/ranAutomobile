@@ -17,22 +17,23 @@
     </div>
     <div class="card-section">
         <div class="grid-section">
-            <div class="tagline1">Sedan</div>
-            <div class="grid-item">
-                <div class="card-item">
-                    <img class="card-img" src="assets/img/pngegg 1.png" alt="sedan"></img>
-                    <div class="card-content">
-                        <div class="card-header">New Corolla Atlas</div>
-                        <ul>
-                            <li>Dual Zone AC</li>
-                            <li>Jok Kulit</li>
-                            <li>Stereo</li>
-                        </ul>
-                        <button class="card-btn"><a href=""></a>Rp120.000.000</button>
+            @foreach ($data_mobil as $mobil)
+                <div class="grid-item">
+                    <div class="card-item">
+                        <img class="card-img" src="{{ $mobil->gambar_display }}" width="50px" height="50px" alt="sedan"></img>
+                        <div class="card-content">
+                            <div class="card-header">{{ $mobil->nama }}</div>
+                            <ul>
+                                <li>Dual Zone AC</li>
+                                <li>Jok Kulit</li>
+                                <li>Stereo</li>
+                            </ul>
+                            <button class="card-btn"><a href=""></a>@currency($mobil->harga)</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="tagline2">Sedan</div>
+            @endforeach
+            {{-- <div class="tagline2">Sedan</div>
             <div class="grid-item">
                 <div class="card-item">
                     <img class="card-img" src="assets/img/Calya 1.png" alt="MPV"></img>
@@ -91,7 +92,7 @@
                         <button class="card-btn"><a href=""></a>Rp614.000.000</button>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
     <div class="step">

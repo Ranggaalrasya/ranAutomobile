@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.Filter {
+    width: 402px;
+    height: 300px;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 11px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.Filter .filter-title {
+    text-align: start;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.search .search-icon {
+    background-color: #20BFB6;
+    color: #fff;
+}
+
+.filter-container {
+    position: relative;
+    max-width: 320px;
+    width: 100%;
+    margin: 20px 0 30px 0;
+}
+
+.dropdown-filter {
+    border: 1px solid white;
+    border: none;
+    margin-top: 20px;
+}

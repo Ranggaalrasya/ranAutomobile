@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Mesin;
+use App\Models\MobilBaru;
 use Illuminate\Http\Request;
 
 class MobilBaruController extends Controller
@@ -13,7 +15,10 @@ class MobilBaruController extends Controller
      */
     public function index()
     {
-        return view('mobil_baru.all');
+        return view('mobil_baru.all', [
+            "data_mobil" => MobilBaru::filter(request(['search', 'mesin_id']))->paginate(),
+            "data_mesin" => Mesin::all()
+        ]);
     }
 
     /**

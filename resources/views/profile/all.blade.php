@@ -30,12 +30,16 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="container profile-card">
-                        <img class="profile-img" src="{{ asset('assets/img/user-profile-image.png') }}"
-                            alt="user-profile-image">
-                        <div class="profile-item">
-                            <h1 class="profile-name">Herman Willem Daendels</h1>
-                            <p class="profile-desc">Anggota Member RanAutoMobile</p>
-                        </div>
+                        @auth
+                            <img class="profile-img" src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+                                alt="user-profile-image">
+                            <div class="profile-item">
+                                <h1 class="profile-name">{{ auth()->user()->name }}</h1>
+                                <p class="profile-desc">Anggota Member RanAutoMobile {{ auth()->user()->created_at->year }}</p>
+                            </div>
+                            
+                        @endauth
+
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -43,7 +47,9 @@
                         <table>
                             <thead>
                                 <tr>
-                                    <th colspan="2" class="info-title"><p>Contact Information</p></th>
+                                    <th colspan="2" class="info-title">
+                                        <p>Contact Information</p>
+                                    </th>
                                 </tr>
                             </thead>
                             <tr>

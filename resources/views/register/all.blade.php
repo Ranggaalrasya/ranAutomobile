@@ -28,16 +28,17 @@
             <div class="form">
                 <h3>Daftar Untuk Order Online</h3>
                 {{-- make form for login and password --}}
-                <form action="get">
+                <form method="POST" action="/register/add">
+                    @csrf
                     <div class="mb-3">
-                        <input type="name" class="form-control" id="exampleInputEmail1" placeholder="Username">
+                        <input type="name" name="name" class="form-control" id="exampleInputEmail1" placeholder="Username" value="{{ old('name') }}">
                     </div>
                     <div class="mb-3">
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email"
+                        <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email" value="{{ old('email') }}"
                             aria-describedby="emailHelp">
                     </div>
                     <div class="mb-3">
-                        <input type="password" class="form-control" id="exampleInputPassword1"
+                        <input type="password" name="password" class="form-control" id="exampleInputPassword1" value="{{ old('password') }}"
                             placeholder="Enter Password">
                     </div>
                     <button type="submit" class="btn-login">Daftar</button>
