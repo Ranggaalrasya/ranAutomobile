@@ -73,7 +73,6 @@
                                                     <h1>{{ $mobil->nama }}</h1>
                                                     <h3>Harga mulai</h3>
                                                     <h3> @currency($mobil->harga) </h3>
-                                                    <h3> {{ $mobil->Mesin->cc }} </h3>
                                                 </div>
                                             </div>
                                         </div>
