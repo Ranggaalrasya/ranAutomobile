@@ -7,12 +7,9 @@
 /* Header Section */
 
 .header {
+    width: 1240px;
     margin: 20px 40px;
     text-align: center;
-}
-
-.navbar-nav {
-    margin-right: 14%;
 }
 
 .nav-item {
@@ -83,8 +80,7 @@ table {
 table .info-title {
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
-    font-weight: 600;
-    color: #979797;
+    font-weight: 900;
 }
 
 td {
