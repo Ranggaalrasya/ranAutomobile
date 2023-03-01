@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg" style="background-color:white;">
+<nav class="navbar navbar-expand-lg fixed-top" style="background-color:white;">
     <div class="container-fluid">
         <a class="navbar-brand" href="/">
             <img src="..\assets\img\black_logo.png" height="83" alt="">
@@ -22,12 +22,11 @@
                 <li class="nav-item dropdown" style="list-style: none;">
                     <a href="#" class="nav-lin dropdown-toggle" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
-                        Hi, {{ auth()->user()->name }}
+                         {{ auth()->user()->name }}
                     </a>
                     <ul class="dropdown-menu">
                         <li class="nav-item dropdown">
-                            <a class="dropdown-item" href="/profile/all"> <i
-                                    class="bi bi-box-arrow-right"></i>Profile</a>
+                            <a class="dropdown-item" href="/profile/all"> <i class="bi bi-box-arrow-right"></i>Profile</a>
                         </li>
                         <li>
                             <hr class="dropdown-divider">

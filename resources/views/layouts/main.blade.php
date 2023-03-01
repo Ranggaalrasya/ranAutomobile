@@ -31,6 +31,9 @@
             margin: 0;
             padding: 0;
         }
+        body{
+            padding-top: 150px;
+        }
     </style>
 </head>
 
