@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('mobil_barus', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('mesin_id');
             $table->string('nama');
             $table->string('merk');
             $table->integer('harga');

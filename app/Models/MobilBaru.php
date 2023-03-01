@@ -2,8 +2,8 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class MobilBaru extends Model
 {
@@ -11,11 +11,15 @@ class MobilBaru extends Model
 
     protected $guarded = ['id'];
 
+    public function mesin(){
+        return $this->belongsTo(Mesin::class);
+    }
+
     public function scopeFilter($query, array $filters)
     {
 
-        if (isset($filters['id'])) {
-            $query->where('id', $filters['id']);
+        if (isset($filters['mesin_id'])) {
+            $query->where('mesin_id', $filters['mesin_id']);
         }
 
         if (isset($filters['search'])) {

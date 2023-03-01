@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
+use App\Models\Mesin;
 use App\Models\MobilBaru;
 use Illuminate\Database\Seeder;
 
@@ -17,8 +18,13 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // \App\Models\User::factory(10)->create();
+        Mesin::create(['cc' => '1400-1700 cc']);
+        Mesin::create(['cc' => '1700-2000 cc']);
+        Mesin::create(['cc' => '2000-2500 cc']);
+        Mesin::create(['cc' => '2500-3000 cc']);
 
         MobilBaru::create([
+            'mesin_id' => '2',
             'nama' => 'COROLLA ALTIS',
             'merk' => 'Toyota',
             'harga' => '538900000',
@@ -35,6 +41,7 @@ class DatabaseSeeder extends Seeder
             'gambar_kanan' => 'https://tsoimageprod.azureedge.net/static-content/prod/360degview/ALTIS/exterior_360/white/images/all-new-corolla-altis-15.png',
         ]);
         MobilBaru::create([
+            'mesin_id' => '1',
             'nama' => 'VELOZ',
             'merk' => 'Toyota',
             'harga' => '286000000',
@@ -51,6 +58,7 @@ class DatabaseSeeder extends Seeder
             'gambar_kanan' => 'https://tsoimageprod.azureedge.net/static-content/prod/360degview/VELOZ-Q/exterior_360/Veloz_Silver/veloz-q-silver-(7)_optimized.png',
         ]);
         MobilBaru::create([
+            'mesin_id' => '3',
             'nama' => 'VELLFIRE',
             'merk' => 'Toyota',
             'harga' => '1399800000',
@@ -67,6 +75,7 @@ class DatabaseSeeder extends Seeder
             'gambar_kanan' => 'https://tsoimageprod.azureedge.net/static-content/prod/360degview/VELLFIRE/exterior_360/black/images/new-vellfire-14.png',
         ]);
         MobilBaru::create([
+            'mesin_id' => '2',
             'nama' => 'INNOVA ZENIX',
             'merk' => 'Toyota',
             'harga' => '419000000',
@@ -83,6 +92,7 @@ class DatabaseSeeder extends Seeder
             'gambar_kanan' => 'https://tsoimageprod.azureedge.net/static-content/prod/360degview/Toyota_Innova_Zenix_2022/exterior_360/Silver-Metallic/Silver_metallic_Q360_Exterior(7).png',
         ]);
         MobilBaru::create([
+            'mesin_id' => '4',
             'nama' => 'FORTUNER 4X2',
             'merk' => 'Toyota',
             'harga' => '606200000',
@@ -99,6 +109,7 @@ class DatabaseSeeder extends Seeder
             'gambar_kanan' => 'https://tsoimageprod.azureedge.net/static-content/prod/360degview/FORTUNER_GR/exterior_360/Fortuner_White/fortuner_super-white-14_optimized.png',
         ]);
         MobilBaru::create([
+            'mesin_id' => '3',
             'nama' => 'CAMRY',
             'merk' => 'Toyota',
             'harga' => '771300000',
