@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>RanAutoMobile</title>
     <script src="https://kit.fontawesome.com/5e00427037.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/footer/footer.css" />
     <link rel="stylesheet" href="/css/home/hero.css">

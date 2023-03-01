@@ -20,7 +20,7 @@
             </ul>
             @auth
                 <li class="nav-item dropdown" style="list-style: none;">
-                    <a href="#" class="nav-lin dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                    <a href="#" class="nav-lin dropdown-toggle" style="text-decoration: none;" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                          {{ auth()->user()->name }}
                     </a>
