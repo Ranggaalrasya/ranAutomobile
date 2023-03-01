@@ -6,12 +6,14 @@
             lebih banyak sehingga<br>
             Anda membayar lebih<br>
             sedikit</h2>
-        <div class="search-bar">
-            <i class="fa-solid fa-magnifying-glass search-icon"></i>
-            <input type="text" placeholder="New ALPHARD 2.5GT A/T Premium">
-            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-            <button type="submit" class="submit"><a>Cari<i class="fa-solid fa-arrow-right arrow"></i></a></button>
-        </div>
+        <form action="mobil-baru/all" method="GET">
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" placeholder="New ALPHARD 2.5GT A/T Premium" name="search" value="{{ request('search') }}">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                <button type="submit" class="submit"><a>Cari<i class="fa-solid fa-arrow-right arrow"></i></a></button>
+            </div>
+        </form>
     </div>
     <div class="form-check form-switch">
     </div>
