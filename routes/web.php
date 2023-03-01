@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DetailController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
@@ -41,3 +42,7 @@ Route::group(["prefix" => "/profile"], function () {
 Route::group(["prefix" => "/mobil-baru"], function () {
     Route::get('/all', [MobilBaruController::class, 'index']);
 });
+Route::group(["prefix" => "/mobil_baru"], function(){
+    Route::get('/all',[MobilBaruController::class, 'index']);
+});
+
