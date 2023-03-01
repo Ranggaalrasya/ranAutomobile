@@ -66,16 +66,21 @@
                                 <div class="row">
 
                                     @foreach ($data_mobil as $mobil)
-                                        <div class="col-lg-4" style="margin-bottom: 40px;">
-                                            <div class="card-car">
-                                                <img class="image-car" src="{{ $mobil->gambar_display }}" alt="">
-                                                <div class="desc-car">
-                                                    <h1>{{ $mobil->nama }}</h1>
-                                                    <h3>Harga mulai</h3>
-                                                    <h3> @currency($mobil->harga) </h3>
+                                    <div class="col-lg-4" style="margin-bottom: 40px;">
+                                        <a href="detail/{{ $mobil->id }}" style="text-decoration:none; color: black">
+                                            
+                                                <div class="card-car">
+                                                    <img class="image-car" src="{{ $mobil->gambar_display }}"
+                                                        alt="">
+                                                    <div class="desc-car">
+                                                        <h1>{{ $mobil->nama }}</h1>
+                                                        <h3>Harga mulai</h3>
+                                                        <h3> @currency($mobil->harga) </h3>
+                                                    </div>
                                                 </div>
+                                            </a>
                                             </div>
-                                        </div>
+                                    
                                     @endforeach
                                 </div>
                                 <div class="header">

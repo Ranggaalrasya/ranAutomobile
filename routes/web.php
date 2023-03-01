@@ -41,7 +41,5 @@ Route::group(["prefix" => "/profile"], function () {
 });
 Route::group(["prefix" => "/mobil-baru"], function () {
     Route::get('/all', [MobilBaruController::class, 'index']);
-});
-Route::group(["prefix" => "/detail_page"], function(){
-    Route::get('/all',[DetailController::class, 'index']);
+    Route::get('/detail/{mobil}', [MobilBaruController::class, 'show']);
 });
