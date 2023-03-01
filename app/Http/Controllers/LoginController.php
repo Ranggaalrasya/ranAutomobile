@@ -24,7 +24,7 @@ class LoginController extends Controller
 
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
-            return view('profile.all');
+            return redirect()->intended('/');
         }
         return back()->with('login Error', 'login gagal !');
     }
